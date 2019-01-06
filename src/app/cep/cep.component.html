@@ -1,0 +1,64 @@
+<div style="margin:60px 0 0 0" class="container">
+  <div class="col-md-8">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" id="cep" placeholder="00000-000" [(ngModel)]="cep.cep">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button class="botao btn btn-primary" type="button" (click)="buscar()">Buscar</button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-7">
+        <div class="form-group">
+            <label for="logradouro">Logradouro</label>
+            <input type="text" class="form-control" id="logradouro" [(ngModel)]="cep.logradouro">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label for="numero">Número</label>
+          <input type="text" class="form-control" id="numero" [(ngModel)]="cep.numero">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label for="complemento">Complemento</label>
+          <input type="text" class="form-control" id="complemento" [(ngModel)]="cep.complemento">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5">
+        <div class="form-group">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" id="bairro" [(ngModel)]="cep.bairro">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="localidade">Cidade</label>
+          <input type="text" class="form-control" id="localidade" [(ngModel)]="cep.localidade">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+          <div class="form-group">
+            <label for="uf">Estado</label>
+            <input type="text" class="form-control" id="uf" [(ngModel)]="cep.uf">
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+</div>
